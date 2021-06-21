@@ -57,3 +57,5 @@ def result_view(request):
         }
         context = {'result': result[str(prediction[0])]}
     return(render(request,"result.html",context))
+def result_history_view(request):
+    return(render(request,"resultHistory.html",{}))

@@ -1,6 +1,9 @@
 {% extends "base.html" %}
 {% block content %}
-<form action='../result/' method='POST'>{% csrf_token %}
+<form action='../result/' id="dataInput" method='POST'>{% csrf_token %}
+    <div class="form_header">
+        Data input
+    </div>
     {{ form.as_p }}
     <input type='submit' value='Show result' />
 </form>

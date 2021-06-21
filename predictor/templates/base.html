@@ -1,9 +1,51 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
     <head>
         <title>Heart Disease Predictor</title>
+        <link rel="stylesheet" href="{% static 'predictor/style.css' %}">
+        <style>
+            nav>ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            nav li {
+              float: left;
+            }
+            
+            nav li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            nav li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            nav .active {
+              background-color: #04AA6D;
+            }
+        </style>
     </head>
     <body>
+        <header>
+            Heart Disease Predictor
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../input">Data Input</a></li>
+                <li><a href="../result_history">Result History</a></li>
+                <li><a href="../contact">Contact</a></li>
+                <li style="float:right"><a class="active" href="../about">About</a></li>
+            </ul>
+        </nav>
         {% block content %}
         To be replaced
         {% endblock %}

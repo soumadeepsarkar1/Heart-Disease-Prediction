@@ -1,0 +1,73 @@
+header
+{
+    padding: 2%;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+    font-size: 3em;
+}
+#dataInput
+{
+    width:65%;
+    margin:auto;
+    padding:3%;
+    background-color: rgb(255, 248, 144);
+    border-radius: 1%;
+}
+#dataInput p
+{
+    display:flex;
+    justify-content: space-between;
+}
+#dataInput input[type=text], #dataInput input[type=number]
+{
+    width: 75%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+#dataInput input[type=submit]
+{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+#dataInput input[type=submit]:hover
+{
+    background-color: #45a049;
+}
+#id_sex>li
+{
+    list-style-type:none;
+    display:inline;
+}
+#id_modelChoice>li
+{
+    list-style-type: none;
+}
+#dataInput label
+{
+    font-size: 1.5em;
+}
+#dataInput input[type=radio]
+{
+    height:1.5em;
+    width:1.5em;
+}
+.form_header
+{
+    font-size: 2em;
+    padding:0.5%;
+    background:green;
+    color:white;
+    text-align: center;
+    border-radius: 5px;
+}
