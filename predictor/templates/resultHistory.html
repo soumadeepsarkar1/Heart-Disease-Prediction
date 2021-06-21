@@ -1,4 +1,22 @@
 {% extends "base.html" %}
 {% block content %}
-
+<h1>Results History</h1>
+<table id="result_history_table">
+    <tr>
+        <th>Name</th><th>Date and Time</th><th>Age</th><th>Sex</th>
+        <th>cp</th><th>trestbps</th><th>chol</th><th>fbs</th>
+        <th>restecg</th><th>thalach</th><th>exang</th><th>oldpeak</th>
+        <th>slope</th><th>ca</th><th>thal</th><th>Model Choice</th>
+        <th>Result</th>
+    </tr>
+    {% for item in querySet %}
+        <tr>
+            <td>{{item.name}}</td><td>{{item.date_time}}</td><td>{{item.age}}</td><td>{{item.sex}}</td>
+            <td>{{item.cp}}</td><td>{{item.trestbps}}</td><td>{{item.chol}}</td><td>{{item.fbs}}</td>
+            <td>{{item.restecg}}</td><td>{{item.thalach}}</td><td>{{item.exang}}</td><td>{{item.oldpeak}}</td>
+            <td>{{item.slope}}</td><td>{{item.ca}}</td><td>{{item.thal}}</td><td>{{item.modelChoice}}</td>
+            <td>{{item.result}}</td>
+        </tr>
+    {% endfor %}
+</table>
 {% endblock %}
